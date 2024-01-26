@@ -40,3 +40,8 @@ Your finished presence should look like this:
 
 ![image](https://github.com/lasagnapapa/Blender4-RPC/assets/68775205/4e8b5ead-a74f-4ad6-aad5-74eb0e496b5c)
 
+### Changelog: (1/26/2024)
+
+Added "Time Elapse" Counter:
+
+![Screenshot 2024-01-26 093241](https://github.com/lasagnapapa/Blender4-RPC/assets/68775205/e4603815-a048-4aa1-b1a1-bcd938161af2)
