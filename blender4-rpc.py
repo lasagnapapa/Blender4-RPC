@@ -6,6 +6,7 @@ import subprocess
 # Replace 'YOUR_CLIENT_ID' with your actual Discord application's Client ID
 CLIENT_ID = 'YOUR_CLIENT_ID'
 RPC = None  # Placeholder for Presence object
+start_time = time.time()  # Store the start time
 
 # Function to check if pypresence is installed
 def is_pypresence_installed():
@@ -46,9 +47,13 @@ def get_project_info():
 def update_presence():
     project_name, asset_count, asset_number = get_project_info()
 
+    elapsed_time = int(time.time() - start_time)
+    elapsed_minutes = elapsed_time // 60
+    elapsed_seconds = elapsed_time % 60
+
     presence_data = {
         'details': f'Working on {project_name}',
-        'state': f'Asset {asset_number} of {asset_count}',
+        'state': f'Asset {asset_number} of {asset_count} | Elapsed Time: {elapsed_minutes}m {elapsed_seconds}s',
         'large_image': 'blender_logo',
         'small_image': 'asset_icon',
         'large_text': 'Blender Project',
@@ -64,7 +69,7 @@ try:
 
     while True:
         update_presence()
-        time.sleep(15)  # Update every 15 seconds
+        time.sleep(1)  # Update every second
 
 except KeyboardInterrupt:
     if RPC:
