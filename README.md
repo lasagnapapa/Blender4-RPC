@@ -9,7 +9,7 @@ This is a simple script to add a Discord RPC to Blender using Blender's Python A
 
 ### NOTICE:
 
-Before executing the script within Blender, you must edit line (7) and replace 'YOUR_CLIENT_ID' with the the Client ID to your Discord applet.
+Before executing the script within Blender, you must edit line (7) and replace 'YOUR_CLIENT_ID' with the Client ID for your Discord applet.
 
 If you do not have a Discord applet, you can make one by following these steps:
 - Go to https://discord.com/developers/
